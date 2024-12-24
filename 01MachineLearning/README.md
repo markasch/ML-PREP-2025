@@ -17,7 +17,7 @@ Please read and understand the following lectures, then attempt to reproduce the
 
 **Lectures**
  
-1. [Big data](../CSU-IMU-2023/01basic-course/01Lectures/00a_bigdata.pdf) 
+1. [Big data](../../CSU-IMU-2023/01basic-course/01Lectures/00a_bigdata.pdf) 
 2. Statistics for ML
 3. Cross-validation (this will be reviewed in the Advanced course)
 
