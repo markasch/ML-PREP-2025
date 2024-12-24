@@ -1,2 +1,63 @@
 # Machine Learning
 
+## Software Setup
+
+For machine learning, we will require a basic python environment with a number of specific packages that will be loaded when necessary. Please follow the instructions in this document. 
+
+## Basic Course
+
+This material is considered to be a pre-requisite for the ML-PREP project. All lectures are based on my CSU course, held in 2023
+
+- [Web page](https://sites.google.com/view/csu2023/home)
+- [GitHub repository](https://github.com/markasch/CSU-IMU-2023)
+
+Please read and understand the following lectures:
+
+### Introduction 
+
+**Lectures**
+ 
+1.
+2.
+3.
+
+**Examples and Exercises**
+
+1.
+2.
+3.
+
+### Supervised ML
+
+**Lectures**
+ 
+1.
+2.
+3.
+
+**Examples and Exercises**
+
+1.
+2.
+3.
+
+### Unsupervised ML
+
+**Lectures**
+ 
+1.
+2.
+3.
+
+**Examples and Exercises**
+
+1.
+2.
+3.
+
+---
+
+
+## Advanced Course
+
+The material for this part will be available shortly.

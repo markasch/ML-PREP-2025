@@ -25,7 +25,7 @@
 
 ### Lecturer
 
-[Mark Asch](https://markasch.github.io/DT-tbx-v1/) is an Emeritus Professor of Mathematics at the University of Picardy Jules Verne, in Amiens France.  His work spans a wide range of areas in computational science and engineering, and machine learning. Current research efforts include physics-informed machine learning, digital twins for green batteries, passive acoustic monitoring of endangered marine species.
+[Mark Asch](https://markasch.github.io/DT-tbx-v1/) is an Emeritus Professor of Mathematics at the [University of Picardy Jules Verne](https://www.u-picardie.fr/), in Amiens France.  His work spans a wide range of areas in computational science and engineering, and machine learning. Current research efforts include physics-informed machine learning, digital twins for green batteries, passive acoustic monitoring of endangered marine species.
 
 - Email: <mark.asch@u-picardie.fr>
 
