@@ -31,22 +31,25 @@ Please read and understand the following lectures, then attempt to reproduce the
 
 **Lectures**
 
-*Regression* 
+*Regression*: 
+
 1. [Linear regression](https://github.com/markasch/CSU-IMU-2023/blob/main/01basic-course/01Lectures/01_super_lr.pdf).
 2. [Other regression methods](https://github.com/markasch/CSU-IMU-2023/blob/main/01basic-course/01Lectures/02_super_SelectRegul.pdf).
-*Classification*
+
+*Classification*:
+
 3. [k-NN classifier](https://github.com/markasch/CSU-IMU-2023/blob/main/01basic-course/01Lectures/03_super_knn.pdf).
 4. [Linear classification methods](https://github.com/markasch/CSU-IMU-2023/blob/main/01basic-course/01Lectures/03_super_class.pdf).
 5. [SVM classifier](https://github.com/markasch/CSU-IMU-2023/blob/main/01basic-course/01Lectures/04_super_SVM.pdf).
 6. [Decision trees, bagging, boosting and random forests](https://github.com/markasch/CSU-IMU-2023/blob/main/01basic-course/01Lectures/05_super_CART.pdf).
-7.[ Feed-forward neural networks](https://github.com/markasch/CSU-IMU-2023/blob/main/01basic-course/01Lectures/06_super_NN.pdf). 
+7. [Feed-forward neural networks](https://github.com/markasch/CSU-IMU-2023/blob/main/01basic-course/01Lectures/06_super_NN.pdf). 
 
 
 **Examples and Exercises**
 
-1.
-2.
-3.
+1. [Numerous examples](https://github.com/markasch/CSU-IMU-2023/tree/main/02advanced-course/02Examples) using PyTorch - see sections: PyTorch, Machine Learning for SciML, Surrogate Modeling (SUMO)
+2. Comparison between simple and multiple regression on a database with quantitative and categorical variables, with generation of a surrogate model → [data](https://github.com/markasch/CSU-IMU-2023/blob/main/01basic-course/02Examples/mlreg_concrete/ConcreteStrength.csv), [notebook](https://github.com/markasch/CSU-IMU-2023/blob/main/01basic-course/02Examples/mlreg_concrete/mlreg_concrete.md)
+3. TBC
 
 ### Unsupervised ML
 
