@@ -2,7 +2,7 @@
 
 ## Software Setup
 
-For machine learning, we will require a basic python environment with a number of specific packages that will be loaded when necessary. Please follow the instructions in this document. 
+For machine learning, we will require a basic python environment with a number of specific packages that will be loaded when necessary. Please follow the instructions in this [document](../CSU-IMU-2023/04codelabs/setup.pdf). 
 
 ## Basic Course
 
@@ -11,15 +11,15 @@ This material is considered to be a pre-requisite for the ML-PREP project. All l
 - [Web page](https://sites.google.com/view/csu2023/home)
 - [GitHub repository](https://github.com/markasch/CSU-IMU-2023)
 
-Please read and understand the following lectures:
+Please read and understand the following lectures, then attempt to reproduce the examples and exercises.
 
 ### Introduction 
 
 **Lectures**
  
-1.
-2.
-3.
+1. [Big data](../CSU-IMU-2023/01basic-course/01Lectures/00a_bigdata.pdf) 
+2. Statistics for ML
+3. Cross-validation (this will be reviewed in the Advanced course)
 
 **Examples and Exercises**
 
