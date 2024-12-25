@@ -2,7 +2,8 @@
 
 ## Software Setup
 
-For gseismic wave propagation, we will require a basic python environment with a number of specific packages that will be loaded when necessary. Please follow the instructions in this [document](../01_setup.pdf). 
+For gseismic wave propagation, we will require a basic python environment and then an installation of the SPECFEM software packages.
+
 
 ### Python environment
 
@@ -27,7 +28,7 @@ Please follow carefully all the instructions provided in the official [documenta
 ## Basic Course
 
 
-Here we will cover some basic material undersatnding and simulating seismic wave propagation. 
+Here we will cover some basic material for undersatnding and simulating seismic wave propagation. 
 
 The topics are:
 
@@ -38,3 +39,12 @@ The topics are:
    - Finite differences.
    - Finite elements.
    - Spectral element method.
+   
+   
+## References
+
+1. H.P. Langtangen. *Finite Difference Computing with PDEs: A Modern Software Approach.* Springer Cham. 2017. [download pdf]()
+2. H. Igel. Computational Seismology: A Practical Introduction. Oxford University Press, 2017. [Website](https://seismo-live.github.io/)
+3. [SPECFEM2D](http://specfem2d.readthedocs.io/)
+4. [SPECFEM3D](http://specfem3d.readthedocs.io/)
+
