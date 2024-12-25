@@ -2,7 +2,7 @@
 
 ## Software Setup
 
-For machine learning, we will require a basic python environment with a number of specific packages that will be loaded when necessary. Please follow the instructions in this [document](https://github.com/markasch/CSU-IMU-2023/blob/main/04codelabs/setup.pdf). 
+For machine learning, we will require a basic python environment with a number of specific packages that will be loaded when necessary. Please follow the instructions in this [document](../01_setup.pdf). 
 
 ## Basic Course
 
