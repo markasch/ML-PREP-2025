@@ -74,4 +74,17 @@ Please read and understand the following lectures, then attempt to reproduce the
 
 ## Advanced Course
 
+Here we will address a number of practical issues that are important for ML implementation.
+
+- Model choice: which method should I use for my problem?
+  - Bias-Variance tradeoff.
+  - Interpretability and explainability.
+- Model tuning and validation: how can I be sure of the accuracy and robustness of my method?
+- Evaluation metrics and predictive power: which metrics measure the predictive power best?
+   - Dangers of $R^2$ and $p$-values. 
+   - Predicted vs. observed
+   - Confidence intervals
+- Causality vs Correlation.
+  - Shapley values
+
 The material for this part will be available shortly.
