@@ -47,23 +47,27 @@ Please read and understand the following lectures, then attempt to reproduce the
 
 **Examples and Exercises**
 
-1. [Numerous examples](https://github.com/markasch/CSU-IMU-2023/tree/main/02advanced-course/02Examples) using PyTorch - see sections: PyTorch, Machine Learning for SciML, Surrogate Modeling (SUMO)
-2. Comparison between simple and multiple regression on a database with quantitative and categorical variables, with generation of a surrogate model → [data](https://github.com/markasch/CSU-IMU-2023/blob/main/01basic-course/02Examples/mlreg_concrete/ConcreteStrength.csv), [notebook](https://github.com/markasch/CSU-IMU-2023/blob/main/01basic-course/02Examples/mlreg_concrete/mlreg_concrete.md)
-3. TBC
+1. [Linear regression](https://github.com/intro-stat-learning/ISLP_labs/blob/stable/Ch03-linreg-lab.ipynb) from [ISLP](https://www.statlearning.com/resources-python).
+2. [Classification](https://github.com/intro-stat-learning/ISLP_labs/blob/stable/Ch04-classification-lab.ipynb) from [ISLP](https://www.statlearning.com/resources-python).
+3. [SVM](https://github.com/intro-stat-learning/ISLP_labs/blob/stable/Ch04-classification-lab.ipynb) from [ISLP](https://www.statlearning.com/resources-python).
+4. [Bagging and boosting (trees)](https://github.com/intro-stat-learning/ISLP_labs/blob/stable/Ch08-baggboost-lab.ipynb) from [ISLP](https://www.statlearning.com/resources-python).
+5. [Neural networks](https://github.com/intro-stat-learning/ISLP_labs/blob/stable/Ch10-deeplearning-lab.ipynb) rom [ISLP](https://www.statlearning.com/resources-python).
+6. [Numerous examples](https://github.com/markasch/CSU-IMU-2023/tree/main/02advanced-course/02Examples) using PyTorch - see sections: PyTorch, Machine Learning for SciML, Surrogate Modeling (SUMO)
+7. Comparison between simple and multiple regression on a database with quantitative and categorical variables, with generation of a surrogate model → [data](https://github.com/markasch/CSU-IMU-2023/blob/main/01basic-course/02Examples/mlreg_concrete/ConcreteStrength.csv), [notebook](https://github.com/markasch/CSU-IMU-2023/blob/main/01basic-course/02Examples/mlreg_concrete/mlreg_concrete.md)
+8. [Cross-validation for a random forest classifier](https://github.com/markasch/CSU-IMU-2023/blob/main/01basic-course/02Examples/CV/CV_RF_sklearn.ipynb)
 
 ### Unsupervised ML
 
 **Lectures**
  
-1.
-2.
-3.
+1. [PCA](https://github.com/markasch/CSU-IMU-2023/blob/main/01basic-course/01Lectures/07_unsup_PCA.pdf).
+2. [k-means, hierarchical clustering](https://github.com/intro-stat-learning/ISLP_labs/blob/stable/Ch12-unsup-lab.ipynb).
+
 
 **Examples and Exercises**
 
-1.
-2.
-3.
+1. [k-means](https://github.com/markasch/CSU-IMU-2023/blob/main/01basic-course/02Examples/k_means/k_means_skl.ipynb)
+2. [PCA, k-means, clustering](https://github.com/intro-stat-learning/ISLP_labs/blob/v2/Ch12-unsup-lab.ipynb) from [ISLP](https://www.statlearning.com/resources-python)
 
 ---
 
