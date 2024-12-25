@@ -2,7 +2,7 @@
 
 ## Software Setup
 
-For gseismic wave propagation, we will require a basic python environment and then an installation of the SPECFEM software packages.
+For seismic wave propagation, we will require a basic python environment and then an installation of the SPECFEM software packages.
 
 
 ### Python environment
@@ -11,7 +11,7 @@ A very basic python environment is needed for learning about wave propagation.
 
 ```
 conda create -n prep-wave
-conda activet prep-wave
+conda activate prep-wave
 
 conda install jupyterlab numpy scipy matplotlib
 jupyter lab
@@ -43,7 +43,7 @@ The topics are:
    
 ## References
 
-1. H.P. Langtangen. *Finite Difference Computing with PDEs: A Modern Software Approach.* Springer Cham. 2017. [download pdf]()
+1. H.P. Langtangen. *Finite Difference Computing with PDEs: A Modern Software Approach.* Springer Cham. 2017. [download pdf](https://link.springer.com/book/10.1007/978-3-319-55456-3)
 2. H. Igel. Computational Seismology: A Practical Introduction. Oxford University Press, 2017. [Website](https://seismo-live.github.io/)
 3. [SPECFEM2D](http://specfem2d.readthedocs.io/)
 4. [SPECFEM3D](http://specfem3d.readthedocs.io/)
