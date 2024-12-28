@@ -49,7 +49,7 @@ The following lessons are availabel:
 
 At the end of each notebook, there is one or more exercises to perform.
 
-** NOTE **
+**NOTE**
 
 Notebook 5 (Raster Data) requires downloading the clipped data file:  [clipped data](https://www.dropbox.com/scl/fi/cmfxrxh2vjebrfmh8zbu3/clipped_raster_europe.tif?rlkey=vx2uu7gqyo6gc19yucl2dtwrw&dl=0).
 
@@ -60,4 +60,6 @@ Advanced topics: (Geospatial Data Science)
 - spatial networks,
 - geospatial statistics combined with machine learning,
 - examples and applications
+
+The material for this part will be available shortly.
 
