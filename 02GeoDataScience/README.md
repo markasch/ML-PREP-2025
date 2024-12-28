@@ -37,19 +37,21 @@ This material is considered to be a pre-requisite for the ML-PREP project and fo
 
 The following lessons are availabel:
 
-1. *Geometries* - [Notebook 1](notebook1/) - use the powerful `shapely` library for creating, manipulating, and analyzing geometric objects.
-2. *Vector Data* - [Notebook 2](notebook2/) - load vector data and learn to use the Python library `geopandas`, an extension of the popular data manipulation library `pandas`, combined with `shapely`'s geometry processing capabilities.
-3. *Visualizing Geospatial Data* - [Notebook 3](notebook3/) - use `matplotmib` together with `geopandas`to create detailed, engaging, and insightful geospatial visualizations that can be applied to a wide range of data analysis tasks
-4. *Map Projections* - [Notebook 4](notebook4/) - overview of map projections and how to effectively manage CRS (coordinate reference systems) in geospatial projects, ensuring that spatial analyses and visualizations are both accurate and meaningful.
-5. *Raster Data* - [Notebook 5](notebook5/) - explore techniques and tools in Python to handle large raster datasets.
-6. *Introduction to OpenStreetMap Data* - [Notebook 6](notebook6/) - download and visualize different types of OpenStreetMap data.
+1.  [Notebook 1](notebook1/) - *Geometries* -  use the powerful `shapely` library for creating, manipulating, and analyzing geometric objects.
+2.  [Notebook 2](notebook2/) -  *Vector Data* -load vector data and learn to use the Python library `geopandas`, an extension of the popular data manipulation library `pandas`, combined with `shapely`'s geometry processing capabilities.
+3. [Notebook 3](notebook3/) - *Visualizing Geospatial Data* - use `matplotmib` together with `geopandas`to create detailed, engaging, and insightful geospatial visualizations that can be applied to a wide range of data analysis tasks
+4. [Notebook 4](notebook4/) - *Map Projections* - overview of map projections and how to effectively manage CRS (coordinate reference systems) in geospatial projects, ensuring that spatial analyses and visualizations are both accurate and meaningful.
+5. [Notebook 5](notebook5/) - *Raster Data* - explore techniques and tools in Python to handle large raster datasets.
+6. [Notebook 6](notebook6/) - *Introduction to OpenStreetMap Data* - download and visualize different types of OpenStreetMap data.
 
 
 **Exercises**
 
 At the end of each notebook, there is one or more exercises to perform.
 
+** NOTE **
 
+Notebook 5 (Raster Data) requires downloading the clipped data file:  [clipped data](https://www.dropbox.com/scl/fi/cmfxrxh2vjebrfmh8zbu3/clipped_raster_europe.tif?rlkey=vx2uu7gqyo6gc19yucl2dtwrw&dl=0).
 
 ## Advanced Course
 
