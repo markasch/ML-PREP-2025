@@ -1,6 +1,6 @@
 # ML-PREP-2025
  
- ML-PREP is a 2-year project, implemented by [Caraga Stata University](https://www.carsu.edu.ph/) in cooperation with [DOST-PHIVOLCS](https://www.phivolcs.dost.gov.ph/index.php), and funded by [DOST](https://www.dost.gov.ph/). 
+ ML-PREP is a 2-year project (2025-2026), implemented by [Caraga Stata University](https://www.carsu.edu.ph/) in cooperation with [DOST-PHIVOLCS](https://www.phivolcs.dost.gov.ph/index.php), and funded by [DOST](https://www.dost.gov.ph/). 
  
 ---
  
@@ -12,7 +12,7 @@
  - Introduction to Geographical Information Systems (GIS) and [Geospatial Data Analysis](./02GeoDataScience)
  - Elements of seismic [Wave Propagation](./03WavePropagation)
  
- Each theme contains theoretical material with programming examples and exercises.
+ Each theme covers basic theoretical material with programming examples and exercises.
  
 ---
 
