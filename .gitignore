@@ -152,4 +152,4 @@ cython_debug/
 #.idea/
 
 # EXTRAS
-.DS_Store
+**/.DS_Store

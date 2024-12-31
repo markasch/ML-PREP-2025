@@ -43,6 +43,7 @@ The following lessons are provided:
 4. [Notebook 4](notebook4/) - *Map Projections* - overview of map projections and how to effectively manage CRS (coordinate reference systems) in geospatial projects, ensuring that spatial analyses and visualizations are both accurate and meaningful.
 5. [Notebook 5](notebook5/) - *Raster Data* - explore techniques and tools in Python to handle large raster datasets. Clipped data file:  [clipped data](https://www.dropbox.com/scl/fi/cmfxrxh2vjebrfmh8zbu3/clipped_raster_europe.tif?rlkey=vx2uu7gqyo6gc19yucl2dtwrw&dl=0).
 6. [Notebook 6](notebook6/) - *Introduction to OpenStreetMap Data* - download and visualize different types of OpenStreetMap data.
+7. [Notebook 7](notebook7/) - *Introduction to Geostatistics* - review the fundamental tools of geostatistics, including variograms and kriging.
 
 
 **Exercises**
@@ -57,6 +58,7 @@ Notebook 5 (Raster Data) requires downloading the clipped data file:  [clipped d
 
 Advanced topics: (Geospatial Data Science)
 
+- advanced geostatistics,
 - spatial networks,
 - geospatial statistics combined with machine learning,
 - examples and applications
