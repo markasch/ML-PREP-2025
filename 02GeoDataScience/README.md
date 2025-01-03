@@ -2,22 +2,19 @@
 
 ## Software Setup
 
-For geospatial data analysis, we will require a basic python environment with a number of specific packages that will be loaded when necessary. Please follow the general instructions in this [document](../01_setup.pdf), and the following specific instructions.
+For geospatial data analysis, we will require a basic python environment with a number of specific packages that will be loaded when necessary. Please follow the general instructions in this [document](../01_setup.pdf), and the following specific instructions. You can change the name `geo_env` to aything you might prefer.
 
 
 ```
-conda create -n GEO -c conda-forge --strict-channel-priority python=3.10 osmnx jupyter
-conda activate GEO
+conda create -n geo_env 
+conda activate geo_env
 
-conda install geopandas=0.14.4
-conda install datashader
-conda install contextily==1.1.0
-conda install plotly
-(conda install esda)  - not needed  for Basic course!
-(pip install h3) - not needed  for Basic course!
-(conda install rtree pydeck) - not needed for Basic course! 
-(conda install rioxarray spreg) - not needed for Basic course!
-conda install statsmodels
+conda config --env --add channels conda-forge
+conda config --env --set channel_priority strict
+
+conda install python=3 geopandas geodatasets
+conda install plotly rasterio osmnx contextily
+conda install jupyter
 
 jupyter lab
 .
@@ -26,6 +23,21 @@ jupyter lab
 conda deactivate
 ```
 
+A more simple approach is to download and use the [environment.yaml](environment.yaml) file as follows:
+
+```
+conda env create -f environment.yaml
+conda activate geo_env
+
+jupyter lab
+.
+.
+.
+conda deactivate
+
+```
+
+**NOTE** You can change the name of the environment from `geo_env` to anything you prefer, by simply modifying the first line of [environment.yaml](environment.yaml). 
 
 ## Basic Course
 
@@ -37,18 +49,19 @@ This material is considered to be a pre-requisite for the ML-PREP project and fo
 
 The following lessons are provided:
 
-1.  [Notebook 1](notebook1/) - *Geometries* -  use the powerful `shapely` library for creating, manipulating, and analyzing geometric objects.
-2.  [Notebook 2](notebook2/) -  *Vector Data* -load vector data and learn to use the Python library `geopandas`, an extension of the popular data manipulation library `pandas`, combined with `shapely`'s geometry processing capabilities.
-3. [Notebook 3](notebook3/) - *Visualizing Geospatial Data* - use `matplotmib` together with `geopandas`to create detailed, engaging, and insightful geospatial visualizations that can be applied to a wide range of data analysis tasks
-4. [Notebook 4](notebook4/) - *Map Projections* - overview of map projections and how to effectively manage CRS (coordinate reference systems) in geospatial projects, ensuring that spatial analyses and visualizations are both accurate and meaningful.
-5. [Notebook 5](notebook5/) - *Raster Data* - explore techniques and tools in Python to handle large raster datasets. Clipped data file:  [clipped data](https://www.dropbox.com/scl/fi/cmfxrxh2vjebrfmh8zbu3/clipped_raster_europe.tif?rlkey=vx2uu7gqyo6gc19yucl2dtwrw&dl=0).
-6. [Notebook 6](notebook6/) - *Introduction to OpenStreetMap Data* - download and visualize different types of OpenStreetMap data.
-7. [Notebook 7](notebook7/) - *Introduction to Geostatistics* - review the fundamental tools of geostatistics, including variograms and kriging.
+0.  [Notebook 0](notebook_00_geodata.ipynb) - *Data* - loading vector data with `geopandas`
+1.  [Notebook 1](notebook_01_geometries.ipynb) - *Geometries* -  use the powerful `shapely` library for creating, manipulating, and analyzing geometric objects.
+2.  [Notebook 2](notebook_02_geopandas.ipynb) -  *Vector Data* -load vector data and learn to use the Python library `geopandas`, an extension of the popular data manipulation library `pandas`, combined with `shapely`'s geometry processing capabilities.
+3. [Notebook 3](notebook_03_visualization.ipynb) - *Visualizing Geospatial Data* - use `matplotlib` together with `geopandas`to create detailed, engaging, and insightful geospatial visualizations that can be applied to a wide range of data analysis tasks
+4. [Notebook 4](notebook_04_map_projections.ipynb) - *Map Projections* - overview of map projections and how to effectively manage CRS (coordinate reference systems) in geospatial projects, ensuring that spatial analyses and visualizations are both accurate and meaningful.
+5. [Notebook 5](notebook_05_raster_data.ipynb) - *Raster Data* - explore techniques and tools in Python to handle large raster datasets. Clipped data file:  [clipped data](https://www.dropbox.com/scl/fi/cmfxrxh2vjebrfmh8zbu3/clipped_raster_europe.tif?rlkey=vx2uu7gqyo6gc19yucl2dtwrw&dl=0).
+6. [Notebook 6](notebook_06_osm.ipynb) - *Introduction to OpenStreetMap Data* - download and visualize different types of OpenStreetMap data.
+7. [Notebook 7](notebook_07_geostatistics.ipynb) - *Introduction to Geostatistics* - review the fundamental tools of geostatistics, including variograms and kriging. *Coming soon*
 
 
 **Exercises**
 
-At the end of each notebook, there is one or more exercises to perform.
+At the end of each notebook, there are exercises to perform.
 
 **NOTE**
 
