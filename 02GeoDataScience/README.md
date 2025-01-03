@@ -23,10 +23,10 @@ jupyter lab
 conda deactivate
 ```
 
-A more simple approach is to download and use the [environment.yaml](environment.yaml) file as follows:
+A more simple approach is to download and use the [environment.yml](environment.yml) file as follows:
 
 ```
-conda env create -f environment.yaml
+conda env create -f environment.yml
 conda activate geo_env
 
 jupyter lab
@@ -37,7 +37,7 @@ conda deactivate
 
 ```
 
-**NOTE** You can change the name of the environment from `geo_env` to anything you prefer, by simply modifying the first line of [environment.yaml](environment.yaml). 
+**NOTE:** You can change the name of the environment from `geo_env` to anything you prefer, by simply modifying the first line of [environment.yml](environment.yml). 
 
 ## Basic Course
 
