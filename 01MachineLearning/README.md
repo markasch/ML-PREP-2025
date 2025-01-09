@@ -24,7 +24,7 @@ Please read and understand the following lectures, then attempt to reproduce the
 **Examples and Exercises**
 
 1. Exploratory data analysis on [diabetes clinical data](https://github.com/markasch/CSU-IMU-2023/blob/main/01basic-course/02Examples/EDA_diabetes)
-2. EDA dashboard on Penguins data using `plotly` and `quarto` - [notebook](dasboards/db_layout.ipynb), rendered [html](dasboards/db_layout.html).
+2. EDA dashboard on Penguins data using `plotly` and `quarto` - [notebook](dasboard/db_layout.ipynb), rendered [html](dasboard/db_layout.html).
 
 
 ### Supervised ML
