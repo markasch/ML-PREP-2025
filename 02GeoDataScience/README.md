@@ -56,17 +56,20 @@ The following lessons are provided:
 4. [Notebook 4](notebook_04_map_projections.ipynb) - *Map Projections* - overview of map projections and how to effectively manage CRS (coordinate reference systems) in geospatial projects, ensuring that spatial analyses and visualizations are both accurate and meaningful.
 5. [Notebook 5](notebook_05_raster_data.ipynb) - *Raster Data* - explore techniques and tools in Python to handle large raster datasets. Clipped data file:  [clipped data](https://www.dropbox.com/scl/fi/cmfxrxh2vjebrfmh8zbu3/clipped_raster_europe.tif?rlkey=vx2uu7gqyo6gc19yucl2dtwrw&dl=0).
 6. [Notebook 6](notebook_06_osm.ipynb) - *Introduction to OpenStreetMap Data* - download and visualize different types of OpenStreetMap data.
-7. [Lecture 7](geostatistics/01_geostat.pdf) - *Introduction to Geostatistics* - review the fundamental tools of geostatistics, including variograms and kriging.
+7. [Lecture 7](geostatistics/01_geostat.pdf) - *Introduction to Geostatistics* - review the fundamental tools of geostatistics, including random variables and fields, variograms and kriging.
+   - Intro  [Notebook](geostatistics/01geostat_INTRO.ipynb)
+   - Kriging[Notebook](geostatistics/02geostat_KRIGING.ipynb)
+   - Kriging + ML [Notebook](geostatistics/03geostat_ML.ipynb)
 
 
 **Exercises**
 
-At the end of each notebook, there are exercises to perform.
+At the end of each Notebooks 1 to 6, there are exercises to perform.
 
 **NOTE**
 
 - Notebook 5 (Raster Data) requires downloading the clipped data file:  [clipped data](https://www.dropbox.com/scl/fi/cmfxrxh2vjebrfmh8zbu3/clipped_raster_europe.tif?rlkey=vx2uu7gqyo6gc19yucl2dtwrw&dl=0).
-- Lecture 7 has some advanced material that will be reviewed in the Advanced Course.
+- Lecture 7 and its notebooks have some advanced material that will be reviewed in the Advanced Course.
 
 ## Advanced Course
 
