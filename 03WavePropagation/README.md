@@ -40,7 +40,15 @@ The topics are:
    - Finite elements.
    - Spectral element method.
    
-   
+###Lecture Notes
+
+- basic theory: [slides](./01_waveprop.pdf)   
+
+### Examples
+
+- 1D vibration ODE: [notebook](./Examples/01vibes.ipynb)
+- 3D acoustic wave equation in heterogeneous medium: [notebook](./Examples/02FD_2D_Acoustic.ipynb)
+
 ## References
 
 1. H.P. Langtangen. *Finite Difference Computing with PDEs: A Modern Software Approach.* Springer Cham. 2017. [download pdf](https://link.springer.com/book/10.1007/978-3-319-55456-3)
