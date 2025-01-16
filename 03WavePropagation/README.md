@@ -40,11 +40,15 @@ The topics are:
    - Finite elements.
    - Spectral element method.
    
-###Lecture Notes
+### Lecture Notes
 
 - basic theory: [slides](./01_waveprop.pdf)   
 
 ### Examples
+
+**NOTE**: the interactive graphics require the installation of a special package
+
+> conda install -c conda-forge ipympl
 
 - 1D vibration ODE: [notebook](./Examples/01vibes.ipynb)
 - 3D acoustic wave equation in heterogeneous medium: [notebook](./Examples/02FD_2D_Acoustic.ipynb)
