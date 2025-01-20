@@ -54,7 +54,7 @@ The topics are:
 - 2D acoustic wave equation in heterogeneous medium: [notebook1](./Examples/02FD_2D_Acoustic-V1.ipynb), [notebook2](./Examples/02FD_2D_Acoustic-V2.ipynb)
 - Animation tutorial [notebook](./Examples/00ani_wave.ipynb)
 - 1D spectral element code in a homogeneous medium  [notebook](./Examples/03_SpectralElements_homogeneous.ipynb)
-- 1D spectral element code in a heterogeneous medium  [notebook](./Examples/03_SpectralElements_Heterogeneous.ipynb)
+- 1D spectral element code in a heterogeneous medium  [notebook](./Examples/04_SpectralElements_Heterogeneous.ipynb)
 
 ## References
 

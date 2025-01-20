@@ -17,7 +17,7 @@ And for saving video files
 - 2D finite difference acoustic wave equation in heterogeneous medium: [notebook](./02FD_2D_Acoustic-V1.ipynb), [markdown](./02FD_2D_Acoustic-V1/02FD_2D_Acoustic-V1.md), [pdf](./02FD_2D_Acoustic-V1.pdf), [html](./02FD_2D_Acoustic-V1.html) 
 - 2D finite difference acoustic wave equation with animation: [notebook](./02FD_2D_Acoustic-V2.ipynb), [markdown](./02FD_2D_Acoustic-V2/02FD_2D_Acoustic-V2.md), [pdf](./02FD_2D_Acoustic-V2.pdf), [html](./02FD_2D_Acoustic-V2.html) 
 - 1D spectral finite element in homogeneous medium [notebook](./03_SpectralElements_homogeneous.ipynb)
-- 1D spectral finite element in heterogeneous medium [notebook](./03_SpectralElements_Heterogeneous.ipynb)
+- 1D spectral finite element in heterogeneous medium [notebook](./04_SpectralElements_Heterogeneous.ipynb)
 
 ---
 
