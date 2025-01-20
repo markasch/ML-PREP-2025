@@ -52,6 +52,7 @@ The topics are:
 
 - 1D vibration ODE: [notebook](./Examples/01vibes.ipynb)
 - 2D acoustic wave equation in heterogeneous medium: [notebook](./Examples/02FD_2D_Acoustic.ipynb)
+- Animation tutorial [notebook](./Examples/00ani_wave.ipynb)
 
 ## References
 
