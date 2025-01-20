@@ -51,7 +51,7 @@ The topics are:
 > conda install -c conda-forge ipympl
 
 - 1D vibration ODE: [notebook](./Examples/01vibes.ipynb)
-- 2D acoustic wave equation in heterogeneous medium: [notebook1](./Examples/02FD_2D_Acoustic-V1.ipynb), notebook2](./Examples/02FD_2D_Acoustic-V2.ipynb)
+- 2D acoustic wave equation in heterogeneous medium: [notebook1](./Examples/02FD_2D_Acoustic-V1.ipynb), [notebook2](./Examples/02FD_2D_Acoustic-V2.ipynb)
 - Animation tutorial [notebook](./Examples/00ani_wave.ipynb)
 
 ## References
