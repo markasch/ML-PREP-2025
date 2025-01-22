@@ -87,4 +87,17 @@ Here we will address a number of practical issues that are important for ML impl
 - Causality vs Correlation.
   - Shapley values
 
-The material for this part will be available shortly.
+The material for this part is under construction and will be updated regularly.
+
+### Lecture notes
+
+- Lecture [notes](./02_ML_advanced.pdf) with details and links to training material.
+
+
+### Examples
+
+- Nested cross-validation [notebook](./Examples/nested_CV.ipynb)
+- Finalizing, saving and reusing a cross-validated model [notebook](./Examples/final_model.ipynb)
+
+
+
