@@ -17,9 +17,8 @@ The following lessons are provided:
 6. [Notebook 6](notebook_06_osm.ipynb) - *Introduction to OpenStreetMap Data* - download and visualize different types of OpenStreetMap data.
 7. [Lecture 7](geostatistics/01_geostat.pdf) - *Introduction to Geostatistics* - review the fundamental tools of geostatistics, including random variables and fields, variograms and kriging.
    - Intro  [Notebook](geostatistics/01geostat_INTRO.ipynb)
-   - Kriging[Notebook](geostatistics/02geostat_KRIGING.ipynb)
-   - Kriging + ML [Notebook](geostatistics/03geostat_ML.ipynb)
-
+   - Kriging [Notebook](geostatistics/02geostat_KRIGING.ipynb)
+ 
 
 **Exercises**
 

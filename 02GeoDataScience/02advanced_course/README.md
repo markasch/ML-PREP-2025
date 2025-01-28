@@ -19,9 +19,10 @@ The material for this part is under construction, and will be made available pro
 
 1. Examples of geostatistical theory:
  
-   - Intro  [Notebook](../01basic_course/geostatistics/01geostat_INTRO.ipynb)
-   - Kriging[Notebook](../01basic_course/geostatistics/02geostat_KRIGING.ipynb)
-   - Kriging + ML [Notebook](../01basic_course/geostatistics/03geostat_ML.ipynb)
+   - Intro - [Notebook](../01basic_course/geostatistics/01geostat_INTRO.ipynb)
+   - Kriging - [Notebook](../01basic_course/geostatistics/02geostat_KRIGING.ipynb)
+   - Kriging + CV - [Notebook](./02examples/08_krig_cv.ipynb)
+   - Kriging + ML - [Notebook](./02examples/03geostat_ML.ipynb)
    
 2. Raster analysis of slopes and slope stability:
 
