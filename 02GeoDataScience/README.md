@@ -46,7 +46,7 @@ See [01basic_course](./01basic_course)
 
 ## Advanced Course
 
-See [02advanced_course](./02advanced__course)
+See [02advanced_course](./02advanced_course)
 
 
 
