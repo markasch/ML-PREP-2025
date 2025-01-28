@@ -11,7 +11,7 @@ The material for this part is under construction, and will be made available pro
 
 ## Lectures
 
-1. Review of geostatistical theory - [lecture](../01basic_course/goestatistics/01_geostat.pdf)
+1. Review of geostatistical theory - [lecture](../01basic_course/geostatistics/01_geostat.pdf)
 2. Geospatial data analysis and Machine learning  - [lecture](./01lectures/02_geostat_ML.pdf)
 
 
