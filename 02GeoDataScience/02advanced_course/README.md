@@ -31,3 +31,8 @@ The material for this part is under construction, and will be made available pro
   - More detailed raster operations (optional) - [notebooks](./02examples/AutoGIS_Lesson7)
 
 
+3. Spatial CV:
+
+4. Use-cases:
+
+  - Ecuador landslide susceptibility analyis (in R): [directory](./02examples/ecuador-landslide)

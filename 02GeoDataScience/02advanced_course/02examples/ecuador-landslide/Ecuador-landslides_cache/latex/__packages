@@ -1,0 +1,15 @@
+knitr
+sf
+terra
+dplyr
+future
+lgr
+mlr3
+mlr3learners
+mlr3spatiotempcv
+paradox
+mlr3tuning
+mlr3viz
+progressr
+pROC
+ggplot2
