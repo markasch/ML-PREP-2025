@@ -35,4 +35,4 @@ The material for this part is under construction, and will be made available pro
 
 4. Use-cases:
 
-  - Ecuador landslide susceptibility analyis (in R): [directory](./02examples/ecuador-landslide)
+  - Ecuador landslide susceptibility analyis (in R): [directory](./02examples/ecuador-landslide), [Rmd file](./02examples/ecuador-landslide/Ecuador-landslides.Rmd)
