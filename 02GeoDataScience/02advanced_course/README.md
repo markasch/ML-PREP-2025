@@ -11,8 +11,8 @@ The material for this part is under construction, and will be made available pro
 
 ## Lectures
 
-1. Review of geostatistical theory - [lecture](../01basic_course/geostatistics/01_geostat.pdf)
-2. Geospatial data analysis and Machine learning  - [lecture](./01lectures/02_geostat_ML.pdf)
+1. Review of geostatistical theory - [lecture notes](../01basic_course/geostatistics/01_geostat.pdf)
+2. Geospatial data analysis and Machine learning  - [lecture notes](./01lectures/02_geostat_ML.pdf)
 
 
 ## Examples
@@ -32,6 +32,8 @@ The material for this part is under construction, and will be made available pro
 
 
 3. Spatial CV:
+ 
+  - Spatial resampling with k-fold clustering - [notebook](./02examples/spatialkfold.ipynb), data [file](./02examples/ames.geojson)
 
 4. Use-cases:
 
