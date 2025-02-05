@@ -37,4 +37,4 @@ The material for this part is under construction, and will be made available pro
 
 4. Use-cases:
 
-  - Ecuador landslide susceptibility analyis (in R): [directory](./02examples/ecuador-landslide), [Rmd file](./02examples/ecuador-landslide/Ecuador-landslides.Rmd)
+  - Ecuador landslide susceptibility analyis (in R) using spatial CV and spatial tuning: [directory](./02examples/ecuador-landslide), [Rmd file](./02examples/ecuador-landslide/Ecuador-landslides.Rmd)
