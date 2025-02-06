@@ -38,5 +38,5 @@ The material for this part is under construction, and will be made available pro
 4. Use-cases:
 
   - Ecuador landslide susceptibility analyis (in R) using spatial CV and spatial tuning: [directory](./02examples/ecuador-landslide), [Rmd file](./02examples/ecuador-landslide/Ecuador-landslides.Rmd)
-  - Domestic violence: [notebook](./02examples/spatialCV/spatialCV_DV.ipynb), [data](./02examples/spatialCV/Data/DV),  [paper](./02examples/spatialCV/2023_GeoAIHandbook_SpatialCV.pdf)
-  - Obesity prevaence: [notebook](./02examples/spatialCV/spatialCV_Obesity.ipynb), [data](./02examples/spatialCV/Data/Obesity),  [paper](./02examples/spatialCV/2023_GeoAIHandbook_SpatialCV.pdf)
+  - Domestic violence with spatial CV and random forest: [notebook](./02examples/spatialCV/spatialCV_DV.ipynb), [data](./02examples/spatialCV/Data/DV),  [paper](./02examples/spatialCV/2023_GeoAIHandbook_SpatialCV.pdf)
+  - Obesity prevalence with spatial CV and MLP neural network: [notebook](./02examples/spatialCV/spatialCV_Obesity.ipynb), [data](./02examples/spatialCV/Data/Obesity),  [paper](./02examples/spatialCV/2023_GeoAIHandbook_SpatialCV.pdf)
