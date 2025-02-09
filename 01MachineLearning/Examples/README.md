@@ -11,5 +11,5 @@ Several examples that illustrate some advanced topics for the practice of machin
 There are 2 tutorials and an example of using a gpu.
 
 - Introduction to pytorch - [pytorch_101](./pytorch_101.ipynb)
-- Machine learning with pytorch - [pytorch_101](./pytorch_102.ipynb)
-- Using a gpu in pytorch - [pytorch_101](./pytorch_M2.ipynb)
+- Machine learning with pytorch - [pytorch_102](./pytorch_102.ipynb)
+- Using a gpu in pytorch - [pytorch_M2](./pytorch_M2.ipynb)
