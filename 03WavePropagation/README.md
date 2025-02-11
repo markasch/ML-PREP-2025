@@ -68,7 +68,7 @@ Based on the theoretical formulation of the spectral element method, we examine 
 
 ### Examples
 
-- calculating a spectrogram of a sinusoidal function: [notebook](./Examples/specfem/01spectogram_sine.ipynb)
+- calculating a spectrogram of a sinusoidal function: [notebook](./Examples/specfem/01spectrogram_sine.ipynb)
 - displaying seismograms from SPECFEM: [notebook](./Examples/specfem/02seismo_1_to_10.ipynb)
 - homogeneous half-space example (TBC)
 - topography and a fluid layer (TBC)
