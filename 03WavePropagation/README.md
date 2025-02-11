@@ -25,7 +25,7 @@ conda deactivate
 Please follow carefully all the instructions provided in the official [documentation](https://specfem2d.readthedocs.io/en/latest/).
 
 
-## Basic Course
+## Introduction to Wave Propagation
 
 
 Here we will cover some basic material for undersatnding and simulating seismic wave propagation. 
@@ -55,6 +55,23 @@ The topics are:
 - Animation tutorial [notebook](./Examples/00ani_wave.ipynb)
 - 1D spectral element code in a homogeneous medium  [notebook](./Examples/03_SpectralElements_homogeneous.ipynb)
 - 1D spectral element code in a heterogeneous medium  [notebook](./Examples/04_SpectralElements_Heterogeneous.ipynb)
+
+
+## Wave Propagation with SPECFEM
+
+Based on the theoretical formulation of the spectral element method, we examine the highly reputable family of codes, [SPECFEM](https://specfem.org/). 
+
+### Lecture notes on SPECFEM
+
+- introduction and installation: [slides](./02_specfem.pdf)
+
+
+### Examples
+
+- calculating a spectrogram of a sinusoidal function: [notebook](./Examples/specfem/01spectogram_sine.ipynb)
+- displaying seismograms from SPECFEM: [notebook](./Examples/specfem/02seismo_1_to_10.ipynb)
+- homogeneous half-space example (TBC)
+- topography and a fluid layer (TBC)
 
 ## References
 
