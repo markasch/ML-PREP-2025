@@ -1,0 +1,1429 @@
+
+ **********************************************
+ **** Specfem 2-D Solver - serial version  ****
+ **********************************************
+
+ Running Git version of the code corresponding to 11e23032568fce4b93b9491a4d1bb7829341b0fb
+ dating 2025-01-27 20:58:02 +0100
+
+
+ NDIM =            2
+
+ NGLLX =            5
+ NGLLZ =            5
+
+ using single precision for the calculations
+
+ smallest and largest possible floating-point numbers are:    1.17549435E-38   3.40282347E+38
+
+ Reading the parameter file...
+
+ Title of the simulation: Tape-Liu-Tromp (GJI 2007)
+
+   using existing STATIONS file: ./DATA/STATIONS
+   file name is ./DATA/STATIONS
+   found           49  receivers
+
+ Parameter file successfully read 
+
+ Reading in SOURCE file...
+
+ Source           1
+   Position xs, zs =    240000.00000000000        240000.00000000000     
+
+   Source type (1=force, 2=moment tensor):            1
+   Force source:
+   Angle of the source (deg) =    0.0000000000000000     
+
+   Time function type (1=Ricker, 2=First derivative, 3=Gaussian, 4=Dirac, 5=Heaviside, 6,7=ocean type, 8=Read from file, 9=burst, 10=Sinusoidal, 11=Ormsby):           2
+   Ricker wavelet (first-derivative):
+   Frequency, delay =    8.4000000000000005E-002   0.0000000000000000     
+   Multiplying factor  =    10000000000.000000     
+
+ all sources are okay
+
+
+
+ -------------------------------------------------------------------------------
+ -------------------------------------------------------------------------------
+ Program SPECFEM2D: 
+ -------------------------------------------------------------------------------
+ -------------------------------------------------------------------------------
+ Tape-Liu-Tromp (GJI 2007)
+ -------------------------------------------------------------------------------
+ -------------------------------------------------------------------------------
+ D a t e : 13 - 02 - 2025                                 T i m e  : 11:59:53
+ -------------------------------------------------------------------------------
+ -------------------------------------------------------------------------------
+
+
+ C o n t r o l
+ =============
+
+     Number of spectral element control nodes. . .(npgeo) =    1681
+     Number of space dimensions. . . . . . . . . . (NDIM) =       2
+
+
+ C o n t r o l
+ =============
+
+     Display frequency . . . (NTSTEP_BETWEEN_OUTPUT_INFO) =    400
+     Color display . . . . . . . . . . . . . . . (colors) =      1
+      == 0     black and white display              
+      == 1     color display                        
+     Numbered mesh . . . . . . . . . . . . . . .(numbers) =      0
+      == 0     do not number the mesh               
+      == 1     number the mesh                      
+
+
+ C o n t r o l
+ =============
+
+     Seismograms recording type . . . . . . .(seismotype) = 1
+     Angle for first line of receivers. . . . .(anglerec) =   0.00
+
+
+ C o n t r o l
+ =============
+
+     Read external initial field. . . . . .(initialfield) =      F
+     Add Bielak conditions (add_Bielak_conditions_bottom) =      F
+     Add Bielak conditions .(add_Bielak_conditions_right) =      F
+     Add Bielak conditions . .(add_Bielak_conditions_top) =      F
+     Add Bielak conditions. .(add_Bielak_conditions_left) =      F
+     Attenuation in solid . . .(ATTENUATION_VISCOELASTIC) =      F
+     Attenuation in fluid . . (ATTENUATION_VISCOACOUSTIC) =      F
+     Save grid in ASCII file or not . (output_grid_ASCII) =      F
+     Save a file with total energy or not.(OUTPUT_ENERGY) =      F
+
+
+ C o n t r o l
+ =============
+
+     Vector display type . . . . . . . . .(imagetype_postscript) =      1
+     Percentage of cut for vector plots. . . . . . . .(cutsnaps) =   1.00
+     Subsampling of velocity model display. (subsamp_postscript) =      1
+
+
+ I t e r a t i o n s 
+ ===================
+
+     Number of time iterations . . . . .(NSTEP) =    5000
+     Time step increment. . . . . . . . . .(DT) =   6.000000E-02
+     Total simulation duration . . . . . (ttot) =   3.000000E+02
+
+
+ reading mesh databases:
+ reading nodal coordinates...
+
+ -- Spectral Elements --
+
+
+     Number of spectral elements . . . . . . . . .  (nspec) =   1600
+     Number of control nodes per element . . . . . (NGNOD) =      4
+     Number of points in X-direction . . . . . . . (NGLLX) =      5
+     Number of points in Y-direction . . . . . . . (NGLLZ) =      5
+     Number of points per element. . . . . . (NGLLX*NGLLZ) =     25
+     Number of points for display . . . . . . (pointsdisp) =      6
+     Number of element material sets . . . . . . . (numat) =      1
+     Number of acoustic forcing elements (nelem_acforcing) =      0
+     Number of acoustic free surf (nelem_acoustic_surface) =      0
+
+ reading attenuation setup...
+ reading material properties..
+
+
+ M a t e r i a l   s e t s :   2 D  (p o r o) e l a s t i c i t y
+ ======================================================
+
+     Number of material sets . . . . . . (numat) =     1
+
+
+     ----------------------------------------
+     -- Elastic (solid) isotropic material --
+     ----------------------------------------
+     Material set number. . . . . . . . (jmat) =     1
+     P-wave velocity. . . . . . . . . . . (cp) = 6.38000000E+03
+     S-wave velocity. . . . . . . . . . . (cs) = 3.85000000E+03
+     Mass density. . . . . . . . . . (density) = 2.60000000E+03
+     Poisson's ratio. . . . . . . . .(poisson) = 2.13651239E-01
+     First Lame parameter Lambda. . . (lambda) = 2.87544400E+10
+     Second Lame parameter Mu. . . . . . .(mu) = 3.85385000E+10
+     Bulk modulus Kappa . . . . . . . .(kappa) = 6.72929400E+10
+     Young's modulus E. . . . . . . . .(young) = 9.70825260E+10
+     QKappa_attenuation .  . . . . . .(QKappa) = 1.00000000E+01
+     Qmu_attenuation . . . . . . . . . . (Qmu) = 1.00000000E+01
+
+ reading interfaces informations...
+   number of interfaces         =            0
+
+ reading absorbing boundary...
+   Total number of absorbing elements =          160
+
+   any absorbing boundary flag        =  T
+   PML boundary flag                  =  F
+   Stacey boundary flag               =  T
+
+
+ Absorbing boundaries:
+   using Stacey absorbing boundary conditions
+
+   Total number of absorbing elements:          160
+     nspec_left   =           40
+     nspec_right  =           40
+     nspec_bottom =           40
+     nspec_top    =           40
+
+
+ reading acoustic forcing...
+   acoustic forcing                             =  F
+   number of acoustic forcing boundary elements =            0
+
+ reading free surface information...
+   number of acoustic free surface boundary elements =            0
+
+ reading coupling surfaces...
+   number of fluid-solid edges  =            0
+   number of fluid-poro  edges  =            0
+   number of solid-poro  edges  =            0
+
+ reading tangential curves...
+   number of tangential curve nodes =            0
+
+ reading axial elements...
+   number of axial elements     =            0
+
+ done reading mesh databases
+
+
+ Setting up mesh
+
+ Generating global mesh numbering (fast version)...
+
+ Mesh numbering:
+   Total number of elements:         1600
+
+   Total number of acoustic elements           =            0
+   Total number of elastic/visco/poro elements =         1600
+
+ Exact total number of grid points in the mesh:        25921
+
+ Mesh dimensions:
+   Xmin,Xmax of the whole mesh =    0.0000000000000000        480000.00000000000     
+   Zmin,Zmax of the whole mesh =    0.0000000000000000        480000.00000000006     
+
+ Material properties:
+   MODEL                   : default
+   nspec                   :         1600
+   external velocity model :  F
+
+   setting up material arrays
+
+   rho : min/max =    2600.00000     /   2600.00000    
+   vs  : min/max =    3849.99976     /   3849.99976    
+   vp  : min/max =    6379.99951     /   6379.99951    
+
+   all material arrays done
+
+   written file: ./OUTPUT_FILES/mesh00000_vs.vtk
+   written file: ./OUTPUT_FILES/mesh00000_vp.vtk
+   written file: ./OUTPUT_FILES/mesh00000_rho.vtk
+
+ Domains:
+   total number of acoustic elements        =            0
+   total number of elastic elements         =         1600
+   total number of poroelastic elements     =            0
+   total number of electromagnetic elements     =            0
+
+ Setting up MPI communication arrays
+
+   maximum number of MPI interfaces (for a single slice) =            0
+
+   This is a single process simulation, no need for MPI communication
+
+   number of outer elements  =            0
+   number of inner elements  =         1600
+
+   percentage of outer elements    0.00000000     %
+   percentage of inner elements    100.000000     %
+
+   number of global nodes in outer elements  =            0
+   number of global nodes in inner elements  =        25921
+
+   determining communication phases:
+   elastic domains:
+   total number of outer/inner elements =            0        1600
+   total percentage of outer elements    0.00000000     %
+   total percentage of inner elements    100.000000     %
+
+ All mesh setup done successfully
+
+ sources:
+   Total number of sources:            1
+
+
+   Setting parameters for source           1
+
+     Source Type. . . . . . . . . . . . . . = Collocated Force
+     X-position (meters). . . . . . . . . . =    2.4000000000E+05
+     Y-position (meters). . . . . . . . . . =    2.4000000000E+05
+     Fundamental frequency (Hz) . . . . . . =    8.4000000000E-02
+     Time delay (s) . . . . . . . . . . . . =    0.0000000000E+00
+     Multiplying factor . . . . . . . . . . =    1.0000000000E+10
+     Angle from vertical direction (deg). . =    0.0000000000E+00
+
+
+
+     using USER_T0 . . . . . . . . . =    48.000000000000000     
+       original t0 . . . . . . . . . =    14.285714285714283     
+       min_tshift_src_original . . . =    0.0000000000000000     
+
+     fix new simulation start time . =   -48.000000000000000     
+     source            1 uses tshift =   -5.3713647286626628E-016
+
+   Source:            1
+     Onset time. . . . . . =   -48.000000000000000     
+     Fundamental period. . =    11.904761904761903     
+     Fundamental frequency =    8.4000000000000005E-002
+     The onset time is ok
+
+ Source:            1
+ *******************************
+  locating force source
+ *******************************
+
+ Force source:
+             original x:    240000.000    
+             original z:    240000.000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element          780
+  in elastic domain
+  at xi,gamma coordinates =    1.0000000000000000        1.0000000000000000     
+
+
+ end of force source detection
+
+
+ receivers:
+
+ Total number of receivers =           49
+
+
+ ********************
+  locating receivers
+ ********************
+
+ reading receiver information from the ./DATA/STATIONS file
+
+
+ Station #            1     AA      S000000                         
+             original x:    0.00000000    
+             original z:    0.00000000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element            1
+  in elastic domain
+  at xi,gamma coordinates =   -1.0000000000000000       -1.0000000000000000     
+ Distance from source:    339411.250      m
+
+
+ Station #            2     AA      S000001                         
+             original x:    0.00000000    
+             original z:    80000.0000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element          241
+  in elastic domain
+  at xi,gamma coordinates =   -1.0000000000000000       0.33333333333333337     
+ Distance from source:    288444.094      m
+
+
+ Station #            3     AA      S000002                         
+             original x:    0.00000000    
+             original z:    160000.000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element          521
+  in elastic domain
+  at xi,gamma coordinates =   -1.0000000000000000      -0.33333333333333592     
+ Distance from source:    252982.219      m
+
+
+ Station #            4     AA      S000003                         
+             original x:    0.00000000    
+             original z:    240000.000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element          761
+  in elastic domain
+  at xi,gamma coordinates =   -1.0000000000000000        1.0000000000000000     
+ Distance from source:    240000.000      m
+
+
+ Station #            5     AA      S000004                         
+             original x:    0.00000000    
+             original z:    320000.000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element         1041
+  in elastic domain
+  at xi,gamma coordinates =   -1.0000000000000000       0.33333333333333098     
+ Distance from source:    252982.219      m
+
+
+ Station #            6     AA      S000005                         
+             original x:    0.00000000    
+             original z:    400000.000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element         1321
+  in elastic domain
+  at xi,gamma coordinates =   -1.0000000000000000      -0.33333333333333104     
+ Distance from source:    288444.094      m
+
+
+ Station #            7     AA      S000006                         
+             original x:    0.00000000    
+             original z:    480000.000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element         1561
+  in elastic domain
+  at xi,gamma coordinates =   -1.0000000000000000        1.0000000000000000     
+ Distance from source:    339411.250      m
+
+
+ Station #            8     AA      S000007                         
+             original x:    80000.0000    
+             original z:    0.00000000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element            7
+  in elastic domain
+  at xi,gamma coordinates =   0.33333333333333337       -1.0000000000000000     
+ Distance from source:    288444.094      m
+
+
+ Station #            9     AA      S000008                         
+             original x:    80000.0000    
+             original z:    80000.0000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element          247
+  in elastic domain
+  at xi,gamma coordinates =   0.33333333333333331       0.33333333333333326     
+ Distance from source:    226274.172      m
+
+
+ Station #           10     AA      S000009                         
+             original x:    80000.0000    
+             original z:    160000.000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element          527
+  in elastic domain
+  at xi,gamma coordinates =   0.33333333333333343      -0.33333333333333576     
+ Distance from source:    178885.438      m
+
+
+ Station #           11     AA      S000010                         
+             original x:    80000.0000    
+             original z:    240000.000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element          767
+  in elastic domain
+  at xi,gamma coordinates =   0.33333333333333331        1.0000000000000000     
+ Distance from source:    160000.000      m
+
+
+ Station #           12     AA      S000011                         
+             original x:    80000.0000    
+             original z:    320000.000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element         1047
+  in elastic domain
+  at xi,gamma coordinates =   0.33333333333333331       0.33333333333333037     
+ Distance from source:    178885.438      m
+
+
+ Station #           13     AA      S000012                         
+             original x:    80000.0000    
+             original z:    400000.000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element         1327
+  in elastic domain
+  at xi,gamma coordinates =   0.33333333333333343      -0.33333333333334147     
+ Distance from source:    226274.172      m
+
+
+ Station #           14     AA      S000013                         
+             original x:    80000.0000    
+             original z:    480000.000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element         1567
+  in elastic domain
+  at xi,gamma coordinates =   0.33333333333333337       0.99999999999999034     
+ Distance from source:    288444.094      m
+
+
+ Station #           15     AA      S000014                         
+             original x:    160000.000    
+             original z:    0.00000000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element           14
+  in elastic domain
+  at xi,gamma coordinates =  -0.33333333333333592       -1.0000000000000000     
+ Distance from source:    252982.219      m
+
+
+ Station #           16     AA      S000015                         
+             original x:    160000.000    
+             original z:    80000.0000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element          254
+  in elastic domain
+  at xi,gamma coordinates =  -0.33333333333333648       0.33333333333333354     
+ Distance from source:    178885.438      m
+
+
+ Station #           17     AA      S000016                         
+             original x:    160000.000    
+             original z:    160000.000    
+ Closest estimate found:    2.91038305E-11  m away
+  in rank            0
+  in element          534
+  in elastic domain
+  at xi,gamma coordinates =  -0.33333333333333576      -0.33333333333333626     
+ Distance from source:    113137.086      m
+
+
+ Station #           18     AA      S000017                         
+             original x:    160000.000    
+             original z:    240000.000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element          774
+  in elastic domain
+  at xi,gamma coordinates =  -0.33333333333333109        1.0000000000000000     
+ Distance from source:    80000.0000      m
+
+
+ Station #           19     AA      S000018                         
+             original x:    160000.000    
+             original z:    320000.000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element         1054
+  in elastic domain
+  at xi,gamma coordinates =  -0.33333333333333642       0.33333333333333220     
+ Distance from source:    113137.086      m
+
+
+ Station #           20     AA      S000019                         
+             original x:    160000.000    
+             original z:    400000.000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element         1334
+  in elastic domain
+  at xi,gamma coordinates =  -0.33333333333333581      -0.33333333333333914     
+ Distance from source:    178885.438      m
+
+
+ Station #           21     AA      S000020                         
+             original x:    160000.000    
+             original z:    480000.000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element         1574
+  in elastic domain
+  at xi,gamma coordinates =  -0.33333333333333109        1.0000000000000000     
+ Distance from source:    252982.219      m
+
+
+ Station #           22     AA      S000021                         
+             original x:    240000.000    
+             original z:    0.00000000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element           20
+  in elastic domain
+  at xi,gamma coordinates =    1.0000000000000000       -1.0000000000000000     
+ Distance from source:    240000.000      m
+
+
+ Station #           23     AA      S000022                         
+             original x:    240000.000    
+             original z:    80000.0000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element          260
+  in elastic domain
+  at xi,gamma coordinates =    1.0000000000000000       0.33333333333333331     
+ Distance from source:    160000.000      m
+
+
+ Station #           24     AA      S000023                         
+             original x:    240000.000    
+             original z:    160000.000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element          540
+  in elastic domain
+  at xi,gamma coordinates =    1.0000000000000000      -0.33333333333333592     
+ Distance from source:    80000.0000      m
+
+
+ Station #           25     AA      S000024                         
+             original x:    240000.000    
+             original z:    240000.000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element          780
+  in elastic domain
+  at xi,gamma coordinates =    1.0000000000000000        1.0000000000000000     
+ Distance from source:    0.00000000      m
+
+
+ Station #           26     AA      S000025                         
+             original x:    240000.000    
+             original z:    320000.000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element         1061
+  in elastic domain
+  at xi,gamma coordinates =  -0.99999999999999778       0.33333333333333387     
+ Distance from source:    80000.0000      m
+
+
+ Station #           27     AA      S000026                         
+             original x:    240000.000    
+             original z:    400000.000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element         1340
+  in elastic domain
+  at xi,gamma coordinates =    1.0000000000000000      -0.33333333333333104     
+ Distance from source:    160000.000      m
+
+
+ Station #           28     AA      S000027                         
+             original x:    240000.000    
+             original z:    480000.000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element         1580
+  in elastic domain
+  at xi,gamma coordinates =    1.0000000000000000        1.0000000000000000     
+ Distance from source:    240000.000      m
+
+
+ Station #           29     AA      S000028                         
+             original x:    320000.000    
+             original z:    0.00000000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element           27
+  in elastic domain
+  at xi,gamma coordinates =   0.33333333333333098       -1.0000000000000000     
+ Distance from source:    252982.219      m
+
+
+ Station #           30     AA      S000029                         
+             original x:    320000.000    
+             original z:    80000.0000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element          267
+  in elastic domain
+  at xi,gamma coordinates =   0.33333333333333126       0.33333333333333331     
+ Distance from source:    178885.438      m
+
+
+ Station #           31     AA      S000030                         
+             original x:    320000.000    
+             original z:    160000.000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element          547
+  in elastic domain
+  at xi,gamma coordinates =   0.33333333333333159      -0.33333333333333093     
+ Distance from source:    113137.086      m
+
+
+ Station #           32     AA      S000031                         
+             original x:    320000.000    
+             original z:    240000.000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element          787
+  in elastic domain
+  at xi,gamma coordinates =   0.33333333333333087        1.0000000000000000     
+ Distance from source:    80000.0000      m
+
+
+ Station #           33     AA      S000032                         
+             original x:    320000.000    
+             original z:    320000.000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element         1067
+  in elastic domain
+  at xi,gamma coordinates =   0.33333333333333126       0.33333333333333043     
+ Distance from source:    113137.086      m
+
+
+ Station #           34     AA      S000033                         
+             original x:    320000.000    
+             original z:    400000.000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element         1347
+  in elastic domain
+  at xi,gamma coordinates =   0.33333333333333159      -0.33333333333334147     
+ Distance from source:    178885.438      m
+
+
+ Station #           35     AA      S000034                         
+             original x:    320000.000    
+             original z:    480000.000    
+ Closest estimate found:    5.82076609E-11  m away
+  in rank            0
+  in element         1587
+  in elastic domain
+  at xi,gamma coordinates =   0.33333333333334064        1.0000000000000000     
+ Distance from source:    252982.219      m
+
+
+ Station #           36     AA      S000035                         
+             original x:    400000.000    
+             original z:    0.00000000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element           34
+  in elastic domain
+  at xi,gamma coordinates =  -0.33333333333333104       -1.0000000000000000     
+ Distance from source:    288444.094      m
+
+
+ Station #           37     AA      S000036                         
+             original x:    400000.000    
+             original z:    80000.0000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element          274
+  in elastic domain
+  at xi,gamma coordinates =  -0.33333333333333176       0.33333333333333348     
+ Distance from source:    226274.172      m
+
+
+ Station #           38     AA      S000037                         
+             original x:    400000.000    
+             original z:    160000.000    
+ Closest estimate found:    5.82076609E-11  m away
+  in rank            0
+  in element          554
+  in elastic domain
+  at xi,gamma coordinates =  -0.33333333333333981      -0.33333333333333143     
+ Distance from source:    178885.438      m
+
+
+ Station #           39     AA      S000038                         
+             original x:    400000.000    
+             original z:    240000.000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element          794
+  in elastic domain
+  at xi,gamma coordinates =  -0.33333333333333104        1.0000000000000000     
+ Distance from source:    160000.000      m
+
+
+ Station #           40     AA      S000039                         
+             original x:    400000.000    
+             original z:    320000.000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element         1074
+  in elastic domain
+  at xi,gamma coordinates =  -0.33333333333333182       0.33333333333334197     
+ Distance from source:    178885.438      m
+
+
+ Station #           41     AA      S000040                         
+             original x:    400000.000    
+             original z:    400000.000    
+ Closest estimate found:    8.23180621E-11  m away
+  in rank            0
+  in element         1354
+  in elastic domain
+  at xi,gamma coordinates =  -0.33333333333333981      -0.33333333333333909     
+ Distance from source:    226274.172      m
+
+
+ Station #           42     AA      S000041                         
+             original x:    400000.000    
+             original z:    480000.000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element         1594
+  in elastic domain
+  at xi,gamma coordinates =  -0.33333333333333104        1.0000000000000000     
+ Distance from source:    288444.094      m
+
+
+ Station #           43     AA      S000042                         
+             original x:    480000.000    
+             original z:    0.00000000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element           40
+  in elastic domain
+  at xi,gamma coordinates =    1.0000000000000000       -1.0000000000000000     
+ Distance from source:    339411.250      m
+
+
+ Station #           44     AA      S000043                         
+             original x:    480000.000    
+             original z:    80000.0000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element          280
+  in elastic domain
+  at xi,gamma coordinates =    1.0000000000000000       0.33333333333333331     
+ Distance from source:    288444.094      m
+
+
+ Station #           45     AA      S000044                         
+             original x:    480000.000    
+             original z:    160000.000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element          560
+  in elastic domain
+  at xi,gamma coordinates =    1.0000000000000000      -0.33333333333333592     
+ Distance from source:    252982.219      m
+
+
+ Station #           46     AA      S000045                         
+             original x:    480000.000    
+             original z:    240000.000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element          800
+  in elastic domain
+  at xi,gamma coordinates =    1.0000000000000000        1.0000000000000000     
+ Distance from source:    240000.000      m
+
+
+ Station #           47     AA      S000046                         
+             original x:    480000.000    
+             original z:    320000.000    
+ Closest estimate found:    5.82076609E-11  m away
+  in rank            0
+  in element         1080
+  in elastic domain
+  at xi,gamma coordinates =    1.0000000000000000       0.33333333333333093     
+ Distance from source:    252982.219      m
+
+
+ Station #           48     AA      S000047                         
+             original x:    480000.000    
+             original z:    400000.000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element         1360
+  in elastic domain
+  at xi,gamma coordinates =    1.0000000000000000      -0.33333333333333104     
+ Distance from source:    288444.094      m
+
+
+ Station #           49     AA      S000048                         
+             original x:    480000.000    
+             original z:    480000.000    
+ Closest estimate found:    0.00000000      m away
+  in rank            0
+  in element         1600
+  in elastic domain
+  at xi,gamma coordinates =    1.0000000000000000        1.0000000000000000     
+ Distance from source:    339411.250      m
+
+ maximum error in location of all the receivers:    8.23180621E-11  m
+
+ end of receiver detection
+
+ found a total of           49  receivers, this is okay
+
+
+ Preparing timerun:
+
+ Movie simulation:
+   color images         - JPEG image type:            3
+   number of steps between outputs       :          200
+
+ Preparing image coloring: jpeg
+   allocating color image arrays
+   locating all the pixels of color images
+   total number of image pixels =       580643
+   done locating all the pixels of color images
+   coloring image background based on velocity
+
+ Checking mesh and stability
+
+ ********
+ Model: P (or PI) velocity min,max =    6380.0000000000000        6380.0000000000000     
+ Model: S velocity min,max         =    3849.9999024975014        3849.9999024975014     
+ Model: density min,max            =    2600.0000000000000        2600.0000000000000     
+ ********
+
+
+ *********************************************
+ *** Verification of simulation parameters ***
+ *********************************************
+
+ *** Max grid size =    12000.000000000000     
+ *** Min grid size =    12000.000000000000     
+ *** Max/min ratio =    1.0000000000000000     
+
+ *** Minimum GLL point distance  =    2072.0779757521368     
+ *** Average GLL point distance  =    3000.0000000000000     
+
+ *** Minimum period resolved     =    3.8961039947739935     
+ *** Maximum frequency resolved  =   0.25666666016650008      Hz
+
+ *** Maximum suggested time step                 =   0.16238855609342764     
+ *** Maximum suggested (Ricker) source frequency =   0.10266666406660004     
+
+ *** for DT :    5.99999987E-02
+ *** Max CFL stability condition of the time scheme based on P wave velocity (must be below about 0.50 or so) =   0.18474208233454567     
+
+ ----
+ Number of points per wavelength:
+ ----
+   Source            1
+   maximum dominant source frequency =   0.21000000000000002      Hz
+
+
+   Nb pts / lambdaP_fmax min =    10.1269846    
+   Nb pts / lambdaP_fmax max =    10.1269846    
+
+   Nb pts / lambdaS_fmax min =    6.11111116    
+   Nb pts / lambdaS_fmax max =    6.11111116    
+
+ -----------------------------------------
+
+ histogram of min number of points per S wavelength in solid regions:
+
+ there are         1600  elements out of         1600  in solid regions
+   (i.e.,    100.000000     % of the total)
+
+ (too small = poor resolution of calculations -
+  too big = wasting memory and CPU time)
+ (threshold value is around 4.5 points per S wavelength
+  in elastic regions and 5.5 per P wavelength in fluid regions):
+
+   6.04999971      -    6.05611086               0     0.00000000      %
+   6.05611086      -    6.06222200               0     0.00000000      %
+   6.06222200      -    6.06833315               0     0.00000000      %
+   6.06833315      -    6.07444429               0     0.00000000      %
+   6.07444429      -    6.08055544               0     0.00000000      %
+   6.08055544      -    6.08666658               0     0.00000000      %
+   6.08666658      -    6.09277773               0     0.00000000      %
+   6.09277773      -    6.09888887               0     0.00000000      %
+   6.09888887      -    6.10500002               0     0.00000000      %
+   6.10500002      -    6.11111116               0     0.00000000      %
+   6.11111116      -    6.11722183            1600     100.000000      %
+   6.11722183      -    6.12333298               0     0.00000000      %
+   6.12333298      -    6.12944412               0     0.00000000      %
+   6.12944412      -    6.13555527               0     0.00000000      %
+   6.13555527      -    6.14166641               0     0.00000000      %
+   6.14166641      -    6.14777756               0     0.00000000      %
+   6.14777756      -    6.15388870               0     0.00000000      %
+   6.15388870      -    6.15999985               0     0.00000000      %
+   6.15999985      -    6.16611099               0     0.00000000      %
+   6.16611099      -    6.17222214               0     0.00000000      %
+
+ total percentage =    100.00000000000000       %
+
+
+ total number of elements in fluid and solid regions =         1600
+
+ Preparing timerun constants
+
+ Preparing array allocations
+   arrays for elastic domains
+   done initialization
+
+
+ Preparing Stacey boundaries
+   total number of absorbing boundary faces/edges:          160
+ Attenuation:
+   viscoelastic  attenuation:  F (shear & bulk attenuation in elastic domains)
+   viscoacoustic attenuation:  F (bulk attenuation in acoustic domains)
+   poro-fluid    attenuation:  F (viscous attenuation in poroelastic domains)
+   permittivity  attenuation:  F (for electromagnetic materials)
+
+ Preparing mass matrices
+   initializing mass matrices
+   adding Stacey contributions to mass matrix
+   inverting mass matrices
+
+
+ Preparing source time function
+   time stepping scheme:   Newmark
+   time stepping stages:            1
+   time step size      :    5.99999987E-02
+
+   number of time steps:         5000
+   number of sources   :            1
+
+   saving the source time function in a text file...
+
+ preparing optimized arrays
+   fused array done
+
+ Elapsed time for preparing timerun in seconds =    2.2414006292819977E-002
+
+ ************
+  time loop
+ ************
+               scheme:         Newmark
+
+            time step:    5.99999987E-02  s
+ number of time steps:         5000
+ total simulated time:    300.000000      seconds
+ start time:  -48.0000000      seconds
+
+
+ =========================================
+ =  T i m e  e v o l u t i o n  l o o p  =
+ =========================================
+
+
+ Starting time iteration loop ...
+
+
+ ******************************************************************
+ Time step #       5 out of    5000
+ ******************************************************************
+ Time: -4.776000E+01 s
+ We have done    8.00160021E-02 % of the total
+ Max norm of vector field in solid (elastic) =    0.00000000    
+ Elapsed time in seconds =    3.0000209808349609E-003
+ Elapsed time in hh:mm:ss =      0 h 00 m 00 s
+ Mean elapsed time per time step in seconds =    6.0000419616699217E-004
+ Time steps remaining =         4995
+ Estimated remaining time in seconds =    2.9970209598541260     
+ Estimated remaining time in hh:mm:ss =      0 h 00 m 02 s
+ Estimated total run time in seconds =    3.0000209808349609     
+ Estimated total run time in hh:mm:ss =      0 h 00 m 03 s
+ The run will finish approximately on: Thu Feb 13, 2025 12:00
+
+ Creating color image of size          763  x          800  for time step            5
+ drawing scalar image of the forward wavefield displacement...
+ Color image maximum amplitude =    0.0000000000000000     
+ Color image created
+
+ Creating color image of size          763  x          800  for time step          200
+ drawing scalar image of the forward wavefield displacement...
+ Color image maximum amplitude =    8.7458540404672645E-040
+ Color image created
+
+
+ ******************************************************************
+ Time step #     400 out of    5000
+ ******************************************************************
+ Time: -2.406000E+01 s
+ We have done    7.98159647     % of the total
+ Max norm of vector field in solid (elastic) =    4.50942598E-18
+ Elapsed time in seconds =   0.22600007057189941     
+ Elapsed time in hh:mm:ss =      0 h 00 m 00 s
+ Mean elapsed time per time step in seconds =    5.6500017642974849E-004
+ Time steps remaining =         4600
+ Estimated remaining time in seconds =    2.5990008115768433     
+ Estimated remaining time in hh:mm:ss =      0 h 00 m 02 s
+ Estimated total run time in seconds =    2.8250008821487427     
+ Estimated total run time in hh:mm:ss =      0 h 00 m 02 s
+ The run will finish approximately on: Thu Feb 13, 2025 12:00
+
+ Creating color image of size          763  x          800  for time step          400
+ drawing scalar image of the forward wavefield displacement...
+ Color image maximum amplitude =    5.5114696798550962E-018
+ Color image created
+
+ Creating color image of size          763  x          800  for time step          600
+ drawing scalar image of the forward wavefield displacement...
+ Color image maximum amplitude =    5.2341565606184304E-005
+ Color image created
+
+
+ ******************************************************************
+ Time step #     800 out of    5000
+ ******************************************************************
+ Time: -6.000000E-02 s
+ We have done    15.9831963     % of the total
+ Max norm of vector field in solid (elastic) =   0.157204255    
+ Elapsed time in seconds =   0.44700002670288086     
+ Elapsed time in hh:mm:ss =      0 h 00 m 00 s
+ Mean elapsed time per time step in seconds =    5.5875003337860110E-004
+ Time steps remaining =         4200
+ Estimated remaining time in seconds =    2.3467501401901245     
+ Estimated remaining time in hh:mm:ss =      0 h 00 m 02 s
+ Estimated total run time in seconds =    2.7937501668930054     
+ Estimated total run time in hh:mm:ss =      0 h 00 m 02 s
+ The run will finish approximately on: Thu Feb 13, 2025 12:00
+
+ Creating color image of size          763  x          800  for time step          800
+ drawing scalar image of the forward wavefield displacement...
+ Color image maximum amplitude =   0.14802500605583191     
+ Color image created
+
+
+ Total number of time steps done:         1000
+ Writing the seismograms by main proc alone took    5.29960394E-02  seconds
+
+ Creating color image of size          763  x          800  for time step         1000
+ drawing scalar image of the forward wavefield displacement...
+ Color image maximum amplitude =    4.5713391155004501E-002
+ Color image created
+
+
+ ******************************************************************
+ Time step #    1200 out of    5000
+ ******************************************************************
+ Time:   23.9400 s
+ We have done    23.9847965     % of the total
+ Max norm of vector field in solid (elastic) =    3.36043313E-02
+ Elapsed time in seconds =   0.77200007438659668     
+ Elapsed time in hh:mm:ss =      0 h 00 m 00 s
+ Mean elapsed time per time step in seconds =    6.4333339532216395E-004
+ Time steps remaining =         3800
+ Estimated remaining time in seconds =    2.4446669022242231     
+ Estimated remaining time in hh:mm:ss =      0 h 00 m 02 s
+ Estimated total run time in seconds =    3.2166669766108198     
+ Estimated total run time in hh:mm:ss =      0 h 00 m 03 s
+ The run will finish approximately on: Thu Feb 13, 2025 12:00
+
+ Creating color image of size          763  x          800  for time step         1200
+ drawing scalar image of the forward wavefield displacement...
+ Color image maximum amplitude =    3.3569682389497757E-002
+ Color image created
+
+ Creating color image of size          763  x          800  for time step         1400
+ drawing scalar image of the forward wavefield displacement...
+ Color image maximum amplitude =    2.7781764045357704E-002
+ Color image created
+
+
+ ******************************************************************
+ Time step #    1600 out of    5000
+ ******************************************************************
+ Time:   47.9400 s
+ We have done    31.9863968     % of the total
+ Max norm of vector field in solid (elastic) =    2.42461804E-02
+ Elapsed time in seconds =   0.99900007247924805     
+ Elapsed time in hh:mm:ss =      0 h 00 m 00 s
+ Mean elapsed time per time step in seconds =    6.2437504529953001E-004
+ Time steps remaining =         3400
+ Estimated remaining time in seconds =    2.1228751540184021     
+ Estimated remaining time in hh:mm:ss =      0 h 00 m 02 s
+ Estimated total run time in seconds =    3.1218752264976501     
+ Estimated total run time in hh:mm:ss =      0 h 00 m 03 s
+ The run will finish approximately on: Thu Feb 13, 2025 12:00
+
+ Creating color image of size          763  x          800  for time step         1600
+ drawing scalar image of the forward wavefield displacement...
+ Color image maximum amplitude =    2.4228233844041824E-002
+ Color image created
+
+ Creating color image of size          763  x          800  for time step         1800
+ drawing scalar image of the forward wavefield displacement...
+ Color image maximum amplitude =    2.1771330386400223E-002
+ Color image created
+
+
+ ******************************************************************
+ Time step #    2000 out of    5000
+ ******************************************************************
+ Time:   71.9400 s
+ We have done    39.9879990     % of the total
+ Max norm of vector field in solid (elastic) =    1.99337211E-02
+ Elapsed time in seconds =    1.2330000400543213     
+ Elapsed time in hh:mm:ss =      0 h 00 m 01 s
+ Mean elapsed time per time step in seconds =    6.1650002002716067E-004
+ Time steps remaining =         3000
+ Estimated remaining time in seconds =    1.8495000600814819     
+ Estimated remaining time in hh:mm:ss =      0 h 00 m 01 s
+ Estimated total run time in seconds =    3.0825001001358032     
+ Estimated total run time in hh:mm:ss =      0 h 00 m 03 s
+ The run will finish approximately on: Thu Feb 13, 2025 12:00
+
+
+ Total number of time steps done:         2000
+ Writing the seismograms by main proc alone took    5.39729595E-02  seconds
+
+ Creating color image of size          763  x          800  for time step         2000
+ drawing scalar image of the forward wavefield displacement...
+ Color image maximum amplitude =    1.9928060472011566E-002
+ Color image created
+
+ Creating color image of size          763  x          800  for time step         2200
+ drawing scalar image of the forward wavefield displacement...
+ Color image maximum amplitude =    1.5779767185449600E-002
+ Color image created
+
+
+ ******************************************************************
+ Time step #    2400 out of    5000
+ ******************************************************************
+ Time:   95.9400 s
+ We have done    47.9895973     % of the total
+ Max norm of vector field in solid (elastic) =    2.77171773E-03
+ Elapsed time in seconds =    1.5369999408721924     
+ Elapsed time in hh:mm:ss =      0 h 00 m 01 s
+ Mean elapsed time per time step in seconds =    6.4041664203008013E-004
+ Time steps remaining =         2600
+ Estimated remaining time in seconds =    1.6650832692782083     
+ Estimated remaining time in hh:mm:ss =      0 h 00 m 01 s
+ Estimated total run time in seconds =    3.2020832101504006     
+ Estimated total run time in hh:mm:ss =      0 h 00 m 03 s
+ The run will finish approximately on: Thu Feb 13, 2025 12:00
+
+ Creating color image of size          763  x          800  for time step         2400
+ drawing scalar image of the forward wavefield displacement...
+ Color image maximum amplitude =    2.7228833641856909E-003
+ Color image created
+
+ Creating color image of size          763  x          800  for time step         2600
+ drawing scalar image of the forward wavefield displacement...
+ Color image maximum amplitude =    1.4392432058230042E-003
+ Color image created
+
+
+ ******************************************************************
+ Time step #    2800 out of    5000
+ ******************************************************************
+ Time:  119.9400 s
+ We have done    55.9911995     % of the total
+ Max norm of vector field in solid (elastic) =    1.01636979E-03
+ Elapsed time in seconds =    1.7760000228881836     
+ Elapsed time in hh:mm:ss =      0 h 00 m 01 s
+ Mean elapsed time per time step in seconds =    6.3428572246006557E-004
+ Time steps remaining =         2200
+ Estimated remaining time in seconds =    1.3954285894121443     
+ Estimated remaining time in hh:mm:ss =      0 h 00 m 01 s
+ Estimated total run time in seconds =    3.1714286123003279     
+ Estimated total run time in hh:mm:ss =      0 h 00 m 03 s
+ The run will finish approximately on: Thu Feb 13, 2025 12:00
+
+ Creating color image of size          763  x          800  for time step         2800
+ drawing scalar image of the forward wavefield displacement...
+ Color image maximum amplitude =    1.0152955073863268E-003
+ Color image created
+
+
+ Total number of time steps done:         3000
+ Writing the seismograms by main proc alone took    5.02500534E-02  seconds
+
+ Creating color image of size          763  x          800  for time step         3000
+ drawing scalar image of the forward wavefield displacement...
+ Color image maximum amplitude =    1.0234072105959058E-003
+ Color image created
+
+
+ ******************************************************************
+ Time step #    3200 out of    5000
+ ******************************************************************
+ Time:  143.9400 s
+ We have done    63.9927979     % of the total
+ Max norm of vector field in solid (elastic) =    9.70807159E-04
+ Elapsed time in seconds =    2.0970001220703125     
+ Elapsed time in hh:mm:ss =      0 h 00 m 02 s
+ Mean elapsed time per time step in seconds =    6.5531253814697264E-004
+ Time steps remaining =         1800
+ Estimated remaining time in seconds =    1.1795625686645508     
+ Estimated remaining time in hh:mm:ss =      0 h 00 m 01 s
+ Estimated total run time in seconds =    3.2765626907348633     
+ Estimated total run time in hh:mm:ss =      0 h 00 m 03 s
+ The run will finish approximately on: Thu Feb 13, 2025 12:00
+
+ Creating color image of size          763  x          800  for time step         3200
+ drawing scalar image of the forward wavefield displacement...
+ Color image maximum amplitude =    9.6585252322256565E-004
+ Color image created
+
+ Creating color image of size          763  x          800  for time step         3400
+ drawing scalar image of the forward wavefield displacement...
+ Color image maximum amplitude =    9.4108638586476445E-004
+ Color image created
+
+
+ ******************************************************************
+ Time step #    3600 out of    5000
+ ******************************************************************
+ Time:  167.9400 s
+ We have done    71.9944000     % of the total
+ Max norm of vector field in solid (elastic) =    8.33354366E-04
+ Elapsed time in seconds =    2.3680000305175781     
+ Elapsed time in hh:mm:ss =      0 h 00 m 02 s
+ Mean elapsed time per time step in seconds =    6.5777778625488283E-004
+ Time steps remaining =         1400
+ Estimated remaining time in seconds =   0.92088890075683594     
+ Estimated remaining time in hh:mm:ss =      0 h 00 m 00 s
+ Estimated total run time in seconds =    3.2888889312744141     
+ Estimated total run time in hh:mm:ss =      0 h 00 m 03 s
+ The run will finish approximately on: Thu Feb 13, 2025 12:00
+
+ Creating color image of size          763  x          800  for time step         3600
+ drawing scalar image of the forward wavefield displacement...
+ Color image maximum amplitude =    8.3407625788822770E-004
+ Color image created
+
+ Creating color image of size          763  x          800  for time step         3800
+ drawing scalar image of the forward wavefield displacement...
+ Color image maximum amplitude =    6.8779854336753488E-004
+ Color image created
+
+
+ ******************************************************************
+ Time step #    4000 out of    5000
+ ******************************************************************
+ Time:  191.9400 s
+ We have done    79.9960022     % of the total
+ Max norm of vector field in solid (elastic) =    7.47608603E-04
+ Elapsed time in seconds =    2.6019999980926514     
+ Elapsed time in hh:mm:ss =      0 h 00 m 02 s
+ Mean elapsed time per time step in seconds =    6.5049999952316283E-004
+ Time steps remaining =         1000
+ Estimated remaining time in seconds =   0.65049999952316284     
+ Estimated remaining time in hh:mm:ss =      0 h 00 m 00 s
+ Estimated total run time in seconds =    3.2524999976158142     
+ Estimated total run time in hh:mm:ss =      0 h 00 m 03 s
+ The run will finish approximately on: Thu Feb 13, 2025 12:00
+
+
+ Total number of time steps done:         4000
+ Writing the seismograms by main proc alone took    5.50980568E-02  seconds
+
+ Creating color image of size          763  x          800  for time step         4000
+ drawing scalar image of the forward wavefield displacement...
+ Color image maximum amplitude =    7.4929191032424569E-004
+ Color image created
+
+ Creating color image of size          763  x          800  for time step         4200
+ drawing scalar image of the forward wavefield displacement...
+ Color image maximum amplitude =    7.0038950070738792E-004
+ Color image created
+
+
+ ******************************************************************
+ Time step #    4400 out of    5000
+ ******************************************************************
+ Time:  215.9400 s
+ We have done    87.9975967     % of the total
+ Max norm of vector field in solid (elastic) =    6.61445025E-04
+ Elapsed time in seconds =    2.9649999141693115     
+ Elapsed time in hh:mm:ss =      0 h 00 m 02 s
+ Mean elapsed time per time step in seconds =    6.7386361685666169E-004
+ Time steps remaining =          600
+ Estimated remaining time in seconds =   0.40431817011399701     
+ Estimated remaining time in hh:mm:ss =      0 h 00 m 00 s
+ Estimated total run time in seconds =    3.3693180842833086     
+ Estimated total run time in hh:mm:ss =      0 h 00 m 03 s
+ The run will finish approximately on: Thu Feb 13, 2025 12:00
+
+ Creating color image of size          763  x          800  for time step         4400
+ drawing scalar image of the forward wavefield displacement...
+ Color image maximum amplitude =    6.6219642758369446E-004
+ Color image created
+
+ Creating color image of size          763  x          800  for time step         4600
+ drawing scalar image of the forward wavefield displacement...
+ Color image maximum amplitude =    3.4663552651181817E-004
+ Color image created
+
+
+ ******************************************************************
+ Time step #    4800 out of    5000
+ ******************************************************************
+ Time:  239.9400 s
+ We have done    95.9991989     % of the total
+ Max norm of vector field in solid (elastic) =    3.41614301E-04
+ Elapsed time in seconds =    3.2330000400543213     
+ Elapsed time in hh:mm:ss =      0 h 00 m 03 s
+ Mean elapsed time per time step in seconds =    6.7354167501131696E-004
+ Time steps remaining =          200
+ Estimated remaining time in seconds =   0.13470833500226340     
+ Estimated remaining time in hh:mm:ss =      0 h 00 m 00 s
+ Estimated total run time in seconds =    3.3677083750565848     
+ Estimated total run time in hh:mm:ss =      0 h 00 m 03 s
+ The run will finish approximately on: Thu Feb 13, 2025 12:00
+
+ Creating color image of size          763  x          800  for time step         4800
+ drawing scalar image of the forward wavefield displacement...
+ Color image maximum amplitude =    3.4126493846997619E-004
+ Color image created
+
+
+ ******************************************************************
+ Time step #    5000 out of    5000
+ ******************************************************************
+ Time:  251.9400 s
+ We have done    100.000000     % of the total
+ Max norm of vector field in solid (elastic) =    3.33880627E-04
+ Elapsed time in seconds =    3.3919999599456787     
+ Elapsed time in hh:mm:ss =      0 h 00 m 03 s
+ Mean elapsed time per time step in seconds =    6.7839999198913579E-004
+ Time steps remaining =            0
+ Estimated remaining time in seconds =    0.0000000000000000     
+ Estimated remaining time in hh:mm:ss =      0 h 00 m 00 s
+ Estimated total run time in seconds =    3.3919999599456787     
+ Estimated total run time in hh:mm:ss =      0 h 00 m 03 s
+
+
+ Total number of time steps done:         5000
+ Writing the seismograms by main proc alone took    5.02238274E-02  seconds
+
+ Creating color image of size          763  x          800  for time step         5000
+ drawing scalar image of the forward wavefield displacement...
+ Color image maximum amplitude =    3.3401971450075507E-004
+ Color image created
+
+
+ Time loop finished. Timing info:
+ Total duration of the time loop in seconds  =    3.20783997      s
+ Total duration of the time loop in hh:mm:ss =      0 h 00 m 03 s
+
+ Total number of time steps =         5000
+ Average duration of a time step of the time loop =    6.41567982E-04  s
+
+ Total number of spectral elements in the mesh =         1600
+     of which         1600  are regular elements
+     and            0  are PML elements.
+ Average duration of the calculation per spectral element =    4.00979985E-07  s
+
+
+ Total duration of the timeloop measured using date and time of the system
+     in seconds     =    3.47399998      s
+     in in hh:mm:ss =      0 h 00 m 03 s
+
+
+
+ -------------------------------------------------------------------------------
+ -------------------------------------------------------------------------------
+ Program SPECFEM2D: 
+ -------------------------------------------------------------------------------
+ -------------------------------------------------------------------------------
+ Tape-Liu-Tromp (GJI 2007)
+ -------------------------------------------------------------------------------
+ -------------------------------------------------------------------------------
+ D a t e : 13 - 02 - 2025                                 T i m e  : 11:59:57
+ -------------------------------------------------------------------------------
+ -------------------------------------------------------------------------------
