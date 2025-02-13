@@ -81,9 +81,9 @@ Based on the theoretical formulation of the spectral element method, we examine 
 ### SPECFEM3D Examples
 
 - homogeneous half-space, and
-- 2-layer half-space  [notebook](./SPECFEM/Notebook3/3_intro_specfem3d)
+- 2-layer half-space  [markdown](./SPECFEM/Notebook3/3_intro_specfem3d/3_intro_specfem3d.md),  [notebook](./SPECFEM/Notebook3/3_intro_specfem3d.ipynb), 
 
-**Note**: this examples requires a full installation of SPECFEM3D with MPI, or the use of a container.
+**Note**: this example requires a full installation of SPECFEM3D with MPI, or the use of a relevant container.
 
 
 ## References
