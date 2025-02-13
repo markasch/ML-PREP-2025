@@ -1,0 +1,231 @@
+
+ **********************************************
+ *** Specfem 2-D Mesher - serial version    ***
+ **********************************************
+
+ Running Git version of the code corresponding to 11e23032568fce4b93b9491a4d1bb7829341b0fb
+ dating 2025-01-27 20:58:02 +0100
+
+ Reading the parameter file...
+
+ Title of the simulation: Test of SPECFEM2D with curved interfaces
+
+ Receiver lines:
+   Nb of line sets =            2
+
+ Parameter file successfully read 
+
+
+ Mesh from internal meshing:
+   Materials:
+   Nb of solid, fluid or porous materials =            4
+
+ --------
+ Material #           1  isotropic
+ rho,cp,cs   =    2700.0000000000000        3000.0000000000000        1732.0509999999999     
+ Qkappa, Qmu =    9999.0000000000000        9999.0000000000000     
+ Material is solid
+ --------
+ Material #           2  isotropic
+ rho,cp,cs   =    2500.0000000000000        2700.0000000000000        0.0000000000000000     
+ Qkappa, Qmu =    9999.0000000000000        9999.0000000000000     
+ Material is fluid
+ --------
+ Material #           3  isotropic
+ rho,cp,cs   =    2200.0000000000000        2500.0000000000000        1443.3750000000000     
+ Qkappa, Qmu =    9999.0000000000000        9999.0000000000000     
+ Material is solid
+ --------
+ Material #           4  isotropic
+ rho,cp,cs   =    2200.0000000000000        2200.0000000000000        1343.3750000000000     
+ Qkappa, Qmu =    9999.0000000000000        9999.0000000000000     
+ Material is solid
+ --------
+
+ Reading interface data from file: ./DATA/../EXAMPLES/simple_topography_and_also_a_simple_fluid_layer/DATA/interfaces_simple_topo_curved.dat
+ Reading            2  points for interface            1
+ Reading            7  points for interface            2
+ Reading            9  points for interface            3
+ Reading            8  points for interface            4
+
+ Total number of layers in z direction =            3
+ There are           20  spectral elements along Z in layer            1
+ There are           20  spectral elements along Z in layer            2
+ There are           20  spectral elements along Z in layer            3
+
+ Total number of spectral elements along X =           80
+ Total number of spectral elements along Z =           60
+
+ Regions:
+   Nb of regions in the mesh =            5
+
+ ------
+ Region            1
+ IX from            1  to           80
+ IZ from            1  to           20
+ Material #            1  isotropic
+ Material is solid
+ vp     =    3000.00000    
+ vs     =    1732.05103    
+ rho    =    2700.00000    
+ Poisson's ratio =   0.249999911    
+ QKappa =    9999.00000    
+ Qmu    =    9999.00000    
+ ------
+ Region            2
+ IX from            1  to           59
+ IZ from           21  to           40
+ Material #            2  isotropic
+ Material is fluid
+ vp     =    2700.00000    
+ vs     =    0.00000000    
+ rho    =    2500.00000    
+ Poisson's ratio =   0.500000000    
+ QKappa =    9999.00000    
+ Qmu    =    9999.00000    
+ ------
+ Region            3
+ IX from           71  to           80
+ IZ from           21  to           40
+ Material #            2  isotropic
+ Material is fluid
+ vp     =    2700.00000    
+ vs     =    0.00000000    
+ rho    =    2500.00000    
+ Poisson's ratio =   0.500000000    
+ QKappa =    9999.00000    
+ Qmu    =    9999.00000    
+ ------
+ Region            4
+ IX from            1  to           80
+ IZ from           41  to           60
+ Material #            3  isotropic
+ Material is solid
+ vp     =    2500.00000    
+ vs     =    1443.37500    
+ rho    =    2200.00000    
+ Poisson's ratio =   0.250000358    
+ QKappa =    9999.00000    
+ Qmu    =    9999.00000    
+ ------
+ Region            5
+ IX from           60  to           70
+ IZ from           21  to           40
+ Material #            4  isotropic
+ Material is solid
+ vp     =    2200.00000    
+ vs     =    1343.37500    
+ rho    =    2200.00000    
+ Poisson's ratio =   0.202726185    
+ QKappa =    9999.00000    
+ Qmu    =    9999.00000    
+ ------
+
+ creating mesh from internal meshing:
+   Total number of spectral elements         =         4800
+
+ PML mesh elements:
+   using internal mesh, PML elements will be determined in solver run...
+
+ The mesh contains         4800  elements
+
+ Control elements have            9  nodes
+
+ Reading in SOURCE file...
+
+ Source           1
+   Position xs, zs =    2500.0000000000000        2500.0000000000000     
+
+   Source type (1=force, 2=moment tensor):            1
+   Force source:
+   Angle of the source (deg) =    0.0000000000000000     
+
+   Time function type (1=Ricker, 2=First derivative, 3=Gaussian, 4=Dirac, 5=Heaviside, 6,7=ocean type, 8=Read from file, 9=burst, 10=Sinusoidal, 11=Ormsby):           1
+   Ricker wavelet (second-derivative):
+   Frequency, delay =    10.000000000000000        0.0000000000000000     
+   Multiplying factor  =    10000000000.000000     
+
+ all sources are okay
+
+ Normals to surface not needed
+
+ Node coordinates:
+
+ reading node coordinates from interfaces...
+
+ Mesh surfaces:
+   determining acoustic free surface...
+   number of acoustic elements with free surface =            0
+
+   determining absorbing boundary surfaces...
+   number of elements with absorbing boundaries =          200
+
+
+ Mesh dimensions: 
+   Min and max value of X in the grid =    0.0000000000000000        4000.0000000000000     
+   Min and max value of Z in the grid =    0.0000000000000000        3355.8363405549972     
+
+ Mesh partitioning:
+   decomposing mesh using NPROC =            1
+
+ Graph construction:
+   graph adjacency done
+
+ Coupled interfaces:
+ nedges_coupled (acoustic/elastic)     =          178
+ nedges_coupled (acoustic/poroelastic) =            0
+ nedges_coupled (poroelastic/elastic)  =            0
+
+ Local numbering:
+   NPROC:            1
+   number of elements:         4800
+
+ decompose mesh all done
+
+ Absorbing boundaries:
+   nedge_bound   :          200
+   nelemabs_merge:          200
+
+ Saving databases:
+   database file: ./OUTPUT_FILES/Database00000.bin
+   slice            0  has number of spectral elements =        4800
+
+   VTK mesh files:
+   written file: ./OUTPUT_FILES//mesh_materials.vtk
+   written file: ./OUTPUT_FILES//mesh_partition_number.vtk
+   done
+
+ creating STATIONS file...
+
+ writing the ./DATA/STATIONS file
+
+
+ There are           22  receivers
+
+ Target positions (x,z) of the           22  receivers
+
+ Receiver            1  =    300.00000000000000        2997.7298908673174     
+ Receiver            2  =    640.00000000000000        3008.0430011257899     
+ Receiver            3  =    980.00000000000000        3090.8224062492818     
+ Receiver            4  =    1320.0000000000000        3283.0303922802987     
+ Receiver            5  =    1660.0000000000000        3347.8768862033312     
+ Receiver            6  =    2000.0000000000000        3250.0000000000000     
+ Receiver            7  =    2340.0000000000000        3197.3138031016656     
+ Receiver            8  =    2680.0000000000000        3150.9619872716830     
+ Receiver            9  =    3020.0000000000000        3086.5939051292362     
+ Receiver           10  =    3360.0000000000000        3042.8523748190692     
+ Receiver           11  =    3700.0000000000000        3020.6886767662263     
+ Receiver           12  =    2500.0000000000000        2500.0000000000000     
+ Receiver           13  =    2500.0000000000000        2250.0000000000000     
+ Receiver           14  =    2500.0000000000000        2000.0000000000000     
+ Receiver           15  =    2500.0000000000000        1750.0000000000000     
+ Receiver           16  =    2500.0000000000000        1500.0000000000000     
+ Receiver           17  =    2500.0000000000000        1250.0000000000000     
+ Receiver           18  =    2500.0000000000000        1000.0000000000000     
+ Receiver           19  =    2500.0000000000000        750.00000000000000     
+ Receiver           20  =    2500.0000000000000        500.00000000000000     
+ Receiver           21  =    2500.0000000000000        250.00000000000000     
+ Receiver           22  =    2500.0000000000000        0.0000000000000000     
+
+ This will be a serial simulation
+

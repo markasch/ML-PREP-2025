@@ -73,6 +73,12 @@ Based on the theoretical formulation of the spectral element method, we examine 
 - homogeneous half-space example (TBC)
 - topography and a fluid layer (TBC)
 
+
+### SPECFEM2D Examples
+
+- 4-layer with topography
+- semi-infinite homogeneous
+
 ## References
 
 1. H.P. Langtangen. *Finite Difference Computing with PDEs: A Modern Software Approach.* Springer Cham. 2017. [download pdf](https://link.springer.com/book/10.1007/978-3-319-55456-3)
