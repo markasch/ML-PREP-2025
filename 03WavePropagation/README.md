@@ -78,6 +78,14 @@ Based on the theoretical formulation of the spectral element method, we examine 
 - semi-infinite homogeneous half-space example [directory](./SPECFEM/Notebook2)
 - exercise on half-space example  [directory](./SPECFEM/Exercise1)
 
+### SPECFEM3D Examples
+
+- homogeneous half-space, and
+- 2-layer half-space  [notebook](./SPECFEM/Notebook3/3_intro_specfem3d)
+
+**Note**: this examples requires a full installation of SPECFEM3D with MPI, or the use of a container.
+
+
 ## References
 
 1. H.P. Langtangen. *Finite Difference Computing with PDEs: A Modern Software Approach.* Springer Cham. 2017. [download pdf](https://link.springer.com/book/10.1007/978-3-319-55456-3)
