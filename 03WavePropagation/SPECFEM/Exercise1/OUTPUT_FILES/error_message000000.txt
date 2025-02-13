@@ -1,2 +1,0 @@
- Error invalid NPROC value
- Error detected, aborting MPI... proc            0
