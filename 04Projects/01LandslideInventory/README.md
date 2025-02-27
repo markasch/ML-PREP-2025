@@ -8,5 +8,5 @@ In this directory, we provide supporting material for, and describe a landslide 
 - codes for VaR dashboard:
   - `dash`-based - [notebook](./landslide_dash.ipynb)
   - class-based `dash` with static output  - [notebook](./landslide_dash_out.ipynb)
-  - `streamlit` version  - [notebook](./landslide-dashboard.ipynb)
+  - `streamlit` version  - [python](./landslide-dashboard.py)
 - code for VaR, CVaR computations  - [notebook](./var-cvar-env.ipynb)
