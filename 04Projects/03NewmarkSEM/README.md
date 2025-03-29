@@ -2,8 +2,8 @@
 
 In this directory, we provide supporting material for, and describe a research project.
 
-- project description and references - [document](./Newmark-SEM.pdf)
-- codes
+- description and references - [document](./Newmark-SEM.pdf)
+- project description -  [document](./P2-Newmark_SEM.pdf)
 
 **NOTE**
 
